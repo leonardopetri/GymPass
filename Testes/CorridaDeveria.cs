@@ -10,7 +10,7 @@ namespace Testes
 
         public CorridaDeveria()
         {
-            _corrida = CorridaFactory.Create(4, LeitorLog.LerLog("log.txt"));
+            _corrida = CorridaFactory.Create(4, LeitorLog.LerLogString(Log.Linhas));
         }
 
         [Fact]

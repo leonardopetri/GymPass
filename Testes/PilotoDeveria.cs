@@ -1,7 +1,5 @@
 ﻿using GymPass;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace Testes
@@ -12,7 +10,7 @@ namespace Testes
 
         public PilotoDeveria()
         {
-            _corrida = CorridaFactory.Create(4, LeitorLog.LerLog("log.txt"));
+            _corrida = CorridaFactory.Create(4, LeitorLog.LerLogString(Log.Linhas));
         }
 
         [Theory]
