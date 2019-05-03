@@ -1,15 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 
 namespace GymPass
 {
     public static class CorridaFactory
     {
-        public static Corrida Create(int numeroVoltas)
+        public static Corrida Create(int numeroVoltas, IList<LinhaLog> linhasLog)
         {
             var corrida = new Corrida(numeroVoltas);
-
-            var linhasLog = LeitorLog.LerLog();
 
             foreach (var linha in linhasLog)
             {

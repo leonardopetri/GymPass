@@ -6,11 +6,11 @@ namespace GymPass
 {
     public static class LeitorLog
     {
-        public static IList<LinhaLog> LerLog()
+        public static IList<LinhaLog> LerLog(string file)
         {
             var log = new List<LinhaLog>();
 
-            foreach (var linha in File.ReadLines("log.txt"))
+            foreach (var linha in File.ReadLines(file))
             {
                 var valores = linha.Split(null).Where(x => !"–".Equals(x.Trim()) && !string.IsNullOrWhiteSpace(x)).ToArray();
 

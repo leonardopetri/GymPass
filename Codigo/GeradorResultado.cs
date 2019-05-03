@@ -4,9 +4,9 @@ namespace GymPass
 {
     public static class GeradorResultado
     {
-        public static void GerarResultado(Corrida corrida)
+        public static void GerarResultado(Corrida corrida, string file)
         {
-            using (var sr = new StreamWriter("resultado.txt"))
+            using (var sr = new StreamWriter(file))
             {
                 var posicaoChegadaHeader = "Posição Chegada    ";
                 var codigoPilotoHeader = "Código Piloto    ";

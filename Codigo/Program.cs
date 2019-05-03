@@ -11,8 +11,8 @@ namespace GymPass
             if (args.Length > 0)
                 int.TryParse(args[0], out numeroVoltas);
 
-            var corrida = CorridaFactory.Create(numeroVoltas);
-            GeradorResultado.GerarResultado(corrida);
+            var corrida = CorridaFactory.Create(numeroVoltas, LeitorLog.LerLog("log.txt"));
+            GeradorResultado.GerarResultado(corrida, "resultado.txt");
             
             foreach (var piloto in corrida.Pilotos)
             {

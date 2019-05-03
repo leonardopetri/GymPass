@@ -10,6 +10,13 @@ namespace GymPass
 
         public IList<Volta> Voltas { get; private set; }
 
+        public Piloto(int codigo)
+        {
+            this.Codigo = codigo;
+
+            this.Voltas = new List<Volta>();
+        }
+
         public Piloto(int codigo, string nome)
         {
             this.Codigo = codigo;
