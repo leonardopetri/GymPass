@@ -5,10 +5,17 @@ This project was developed using the C# language and the .Net Core Framework. Th
 
 To change the data loaded by the code copy and paste the new data into the file "log.txt" into the root folder.
 
+## Running the tests
+
+1. Install [DotNet Core 2.2 Framework](https://dotnet.microsoft.com/download/dotnet-core/2.2 "DotNet Core 2.2 Framework")
+2. Open the Command Prompt on the project's folder "Testes".
+3. Run the following commands:
+    - dotnet test
+
 ## Running the code
 
 1. Install [DotNet Core 2.2 Framework](https://dotnet.microsoft.com/download/dotnet-core/2.2 "DotNet Core 2.2 Framework")
-2. Open the Command Prompt on the project's folder.
+2. Open the Command Prompt on the project's folder "Codigo".
 3. Run the following commands:
     - dotnet restore
     - dotnet build
